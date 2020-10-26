@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div style="width: 100%; height: auto; ">
+	<form name="form" class="form">
+	<input type="text" name="display" class="display" placeholder="0" disabled>
+	<span style="font-family:sans-serif; font-size: 14px; font-weight: bold; color: black; background-color: white; user-select: none; border-radius: 1px;">DISPLAY</span>
+	<br>
+	<input type="button" value="1" name="button1" OnClick="form.display.value +='1'">
+	<input type="button" value="2" name="button2" OnClick="form.display.value +='2'">
+	<input type="button" value="3" name="button3" OnClick="form.display.value +='3'">
+	<input type="button" value="+" name="sum"	  OnClick="form.display.value +='+'">
+	<br>
+	<input type="button" value="4" name="button4" OnClick="form.display.value +='4'">
+	<input type="button" value="5" name="button5" OnClick="form.display.value +='5'">
+	<input type="button" value="6" name="button6" OnClick="form.display.value +='6'">
+	<input type="button" value="-" name="sub" OnClick="form.display.value +='-'">
+	<br>
+	<input type="button" value="7" name="button7" OnClick="form.display.value +='7'">
+	<input type="button" value="8" name="button8" OnClick="form.display.value +='8'">
+	<input type="button" value="9" name="button9" OnClick="form.display.value +='9'">
+	<input type="button" value="x" name="multiple" OnClick="form.display.value +='*'">
+	<br>
+	<input type="button" value="." name="point" OnClick="form.display.value +='.'">
+	<input type="button" value="0" name="button0" OnClick="form.display.value +='0'">
+	<input type="button" value="/" name="div" OnClick="form.display.value +='/'">
+	<input type="button" value="&larr;" name="back" OnClick="form.display.value 
+	= form.display.value.slice(0,-1)">
+	<br>
+	<input type="button" value="Total" name="equal" OnClick="form.display.value =eval(form.display.value)" style="width: 6.5em; height: 50px; padding-top: 19px;">
+	<input type="button" value="Clear All" name="all clear" OnClick="form.display.value =''" style="width:6.5em;  height: 50px; padding-top: 19px; padding-left: 8px;">
+	</form>
+</div>
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+.form{
+	width: 32%;
+	height: 18em;
+	margin:0 auto;
+	font-size: 2em;
+	text-align: center;
+	padding:10px;
+	margin-top: 20px;
+	background-color: #6560e6;
+	box-shadow: 0px 0px 8px 3px #a3a1a0;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+.display{
+	width: 100%; 
+	height: 80px;
+	font-size: 40px;
+	margin-top: 2px;
+	border-radius: 3px;
+	background-color: #ededed;
+	color: black;
+	border: 1px solid;
+	box-shadow: 0px 0px 3px 3px grey;
+
+}
+ .form input[type="button"]{
+ 	width:15%;
+ 	color: black;
+ 	border: 1px solid;
+	cursor: pointer;
+ 	background-color: white;
+ 	margin-left: 15px;
+ 	text-align: center;
+ 	font-size: 23px;
+ 	padding: 20px;
+ 	font-family: sans-serif;
+ 	font-weight: bold;
+ 	text-transform: uppercase;
+	margin-top: 27px;
+	line-height: 12px;
+	border-radius: 4px;
+
+ }
+ .form input[type="button"]:hover{
+ 	background-color: rgba(213, 219, 208, 0.8);
+ 	color: white;
+ 	text-shadow: 5px 5px 5px grey;
+ }
+
+@media screen and (max-width: 1125px) {
+.form {height: 60%; width: 40%;}
+}
+@media screen and (max-width: 1000px) {
+.form{height: 60%; width: 50%;}
+}
+@media screen and (max-width: 900px) {
+.form{height: 60%; width: 60%;}
+}
+@media screen and (max-width: 650px) {
+.form{height: 60%; width: 80%;}
+}
+@media screen and (max-width: 500px) {
+.form{height: 60%; width: 90%;}
+}
+@media screen and (max-width: 480px) {
+.form{height: 60%; width: 90%;}
+}
+@media screen and (max-width: 420px) {
+.form{height: 60%; width: 100%;}
+}
+@media screen and (max-height: 380px) {
+.form{height: 60%; width: 100%;}
+}
+@media screen and (max-width: 300px) {
+.form{height: 100%; width: 100%;}
+}
+@media screen and (max-width: 290px) {
+.form{height: 100%; width: 100%;}
+}
+</style>
+
+
+
+
+</body>
+</html>
