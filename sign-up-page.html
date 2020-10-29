@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Feature Project</title>
+
+</head>
+<body>
+<div>
+	<form class="signup" method="POST" action="registration.php">
+		<fieldset><legend style="text-align: center; font-weight: bold; font-size: 20px; text-transform: uppercase; padding:0 10px;">Sign Up</legend>
+			<label>First Name:</label>
+				<input type="text" name="firstname" style="text-transform: uppercase;" autofocus>
+			
+			<br>
+			<label>Last Name:</label>
+				<input type="text" name="lastname" style="text-transform: uppercase;">
+			
+			<br>
+			<label>Email:</label>
+				<input type="email" name="email" placeholder="example@gmail.com">
+			
+			<br>
+			<label>Mobile Number:</label>
+				<select><option>+91</option></select><input type="text" name="mobile" style="margin-left: 20px; padding-right: 3px; font-size: 14px; text-align: center;" minlength="0" maxlength="10">
+			
+			<br>
+			<label>Password:</label>
+				<input type="password" name="password" id="password" onkeyup="check()">
+			
+			<br>
+			<label>Confirm Password:</label>
+				<input type="password" name="confirm-password" id="confirm_password" onkeyup="check()">
+			<br>
+			<span id="message"></span>
+			<br>
+			<label>Gender: </label>
+			<label style="margin-left: 95px;">Male:
+				<input type="radio" name="gender" style="margin-left: 50px; margin-top: 12px;" value="1">
+			</label>
+			<label style="margin-left: 30px;">Female:
+				<input type="radio" name="gender" style="margin-left: 145px; margin-top: 12px;" value="0">
+			</label>
+			<label style="margin-left: 30px;">Other:
+				<input type="radio" name="gender" style="margin-left: 228px; margin-top: 12px;" value="0">
+			</label>
+			<br>
+			<label>Privacy & Policy:
+				<input type="checkbox" name="checkbox" style="margin-top: 12px;" value="1" required>
+			</label>
+			<br>
+			<input type="submit" name="submit">
+		</fieldset>
+	</form>
+</div>
+</body>
+
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+}
+fieldset{
+	height: 70vh;
+	border-radius: 50px;
+	
+}
+body{
+	background-color: #555666;
+}
+.signup{
+	margin: auto;
+	top: 50px;
+	left: 10px;
+	width: 38%;
+	position: relative;
+	line-height: 35px;
+	background-color: #ffffff;
+	color: black;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-transform: capitalize;
+	border-radius: 50px;
+}
+.signup input{
+	position: absolute;
+	left: 170px;
+	margin-top: 6px;
+	line-height: 22px;
+	border-radius: 4px;
+	font-size: 15px;
+	border-color: dodgerblue;
+	outline: none;
+	padding-left: 10px;
+}
+form label{
+	margin-left: 10px;
+}
+.signup input[type="submit"]{
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding-left: 0px;
+	padding-bottom: 2px;
+	margin-top: 20px;
+	background-color: white;
+	text-align: center;
+	color: rgba(0,0,0,0.6);
+	cursor: pointer;
+	border:2px solid black;
+	font-family: sans-serif;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+.signup input[type="submit"]:hover{
+	border-color: rgba(0,0,0,0.6);
+}
+
+</style>
+
+<script type="text/javascript">
+	
+var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').style.fontSize = '20px';
+    document.getElementById('message').innerHTML = '&#10004';
+    document.getElementById('message').style.transition = '.5s';
+
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').style.fontSize = '20px';
+    document.getElementById('message').style.transition = '.5s';
+    document.getElementById('message').style.marginLeft = '170px';
+    document.getElementById('message').innerHTML = '&#x274C';
+  }
+}
+</script>
+</html>
