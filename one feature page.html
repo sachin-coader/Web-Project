@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project 1</title>
+	<link rel="stylesheet" type="text/css" href="pro1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+	<div class="left">
+		<img src="#" alt="LOGO">
+		<h2>My website</h2>
+	</div>
+
+	<div class="right">
+		<ul class="menu">
+			<a href="#"><li>home</li></a>
+			<a href="#"><li>about us</li></a>
+			<a href="#"><li>contact us</li></a>
+			<a href="#"><li>privacy & policy</li></a>
+			<a href="#"><li id="li">site map</li></a>
+		</ul>
+	</div>
+</div>
+
+<div id="sidebar2" class="sidebar1">
+	<a href="javascript:void(0)" class="closebtn" onclick="closebtn1()">x</a>
+	<a href="#id1">menu1</a>
+	<a href="#id2">menu2</a>
+	<a href="#id3">menu3</a>
+	<a href="#">menu4</a>
+	<a href="file:///D:/Web%20Projects/calculator.html" style="font-variant: small-caps; text-transform: lowercase;">calculator</a>
+</div>
+<div id="menubar">
+	<button class="menubtn" onclick="openbtn()">☰ menu</button>
+</div>
+
+
+<div>
+<div class="loginform" style="padding-left: 10px;">
+	<h1 style="text-align: center; text-transform: uppercase; font-family: 'Staatliches', cursive;; font-weight: bold; font-size: 35px; text-decoration: underline;">LOG IN</h1>
+	<form method="post" target="_self" >
+		<label>Username:
+			<input type="email" name="Email" required>
+		</label>
+		<br>
+		<label>Password:
+			<input type="password" name="Password" style="margin:0px 0px 0px 24px; padding-top: 5px;" required>
+		</label><br>
+		<input type="submit" name="Submit">
+		<a href="#" id="fp">Forgot Password</a><br>
+		<p id="new">New User <a href="file:///D:/Web%20Projects/pro3.html?first=&last=&email=&mobile=&password=&confirm-password=&first=on&submit=Submit" style="font-size: 25px; margin-left: 10px;">Sign Up Here</a></p>
+	</form>
+</div>
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-whatsapp"></i></a> 
+  <a href="#"><i class="fa fa-facebook"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div>
+
+<div style="margin-left: 170px;" class="content">
+	<h2 style="text-align: center;">Content</h2>
+	<pre>
+	<p id="id1">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p id="id2">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="id3">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</pre>
+</div>
+<div class="footer">
+	<footer>Copyright &#169 2020</footer>
+</div>
+</body>
+
+
+
+
+
+
+<script type="text/javascript">
+function openbtn() {
+  document.getElementById("sidebar2").style.width = "220px";
+  document.getElementById("menubar").style.marginLeft = "0px";
+}
+
+function closebtn1() {
+  document.getElementById("sidebar2").style.width = "0";
+  document.getElementById("menubar").style.marginLeft= "0";
+}
+
+</script>
+</html>
